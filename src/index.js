@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Toaster } from 'react-hot-toast';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import App from './App';
+import AuthContextProvider from './contexts/AuthContext';
 import Dashbaord from './pages/Dashboard';
 import Signup from './pages/Signup';
 import { HomeContainer } from './styles';
@@ -12,16 +14,19 @@ import { theme } from './styles/theme';
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <ThemeProvider theme={theme}>
-        <GlobalStyles />
-        <HomeContainer>
-          <Routes>
-            <Route path="/" element={<App />} />
-            <Route path="/dashboard" element={<Dashbaord />} />
-            <Route path="/signup" element={<Signup />} />
-          </Routes>
-        </HomeContainer>
-      </ThemeProvider>
+      <AuthContextProvider>
+        <ThemeProvider theme={theme}>
+          <GlobalStyles />
+          <Toaster position="bottom-right" />
+          <HomeContainer>
+            <Routes>
+              <Route path="/" element={<App />} />
+              <Route path="/Dashboard" element={<Dashbaord />} />
+              <Route path="/Signup" element={<Signup />} />
+            </Routes>
+          </HomeContainer>
+        </ThemeProvider>
+      </AuthContextProvider>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')

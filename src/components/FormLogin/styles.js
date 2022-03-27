@@ -1,4 +1,4 @@
-import { darken, lighten } from 'polished';
+import { darken } from 'polished';
 import styled from 'styled-components';
 
 export const Container = styled.div`
@@ -83,14 +83,16 @@ export const Container = styled.div`
 
       > button {
         color: ${({ theme }) => theme.text};
-        background-color: ${({ theme }) => lighten(0.2, theme.background)};
+        height: 2rem;
+        width: 205px;
+        background-color: ${({ theme }) => theme.backgroundButton};
         border: none;
         border-radius: 10px;
         padding: 0.5rem 1rem 0.5rem 1rem;
         transition: all 0.2s;
 
         &:hover {
-          background-color: ${({ theme }) => theme.textlight};
+          background-color: ${({ theme }) => darken(0.1, theme.backgroundButton)};
         }
       }
     }
@@ -113,13 +115,13 @@ export const Container = styled.div`
 
         border: none;
         border-radius: 10px;
-        background: ${({ theme }) => darken(0.3, theme.textlight)};
+        background: ${({ theme }) => theme.backgroundButton};
         color: ${({ theme }) => theme.text};
         padding: 0.8rem 1.5rem 0.8rem 1.5rem;
         transition: all 2s;
 
         &:hover {
-          background-color: ${({ theme }) => theme.textlight};
+          background-color: ${({ theme }) => darken(0.1, theme.backgroundButton)};
         }
 
         svg {

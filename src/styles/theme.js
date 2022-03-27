@@ -1,6 +1,7 @@
 export const theme = {
-    background: '#2B1D84',
-    primary: '#2B1D84',
+    background: '#040E2F',
+    backgroundButton: '#273250',
+    primary: '#0C1228',
     text: '#ffffff',
-    textlight: '#4EE419',
+    textlight: '#18CDCA',
 };

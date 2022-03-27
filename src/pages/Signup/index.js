@@ -1,29 +1,58 @@
-import React, { useRef } from 'react';
-import { signup } from '../../services/firebase';
+import React, { useState } from 'react';
+import toast from 'react-hot-toast';
+import { theme } from '../../styles/theme';
 
 import { Container } from './styles';
 
 function Signup() {
-  const emailRef = useRef();
-  const passwordRef = useRef();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [loading, setLoading] = useState(false);
 
-  async function handleSignup() {
-    await signup(emailRef.current.value, passwordRef.current.value);
+  async function handleSignup(event) {
+    event.preventDefault();
+
+    if (loading) return;
+
+    if (!email.trim() || !password.trim()) {
+      toast.error('Preencha todos os campos para criar sua conta!', {
+        style: {
+          background: theme.backgroundButton,
+          color: theme.text
+        }
+      });
+    }
+    setLoading(true);
+    return;
   }
 
   return (
-    <Container>
+    <Container onSubmit={handleSignup}>
       <div>
-        <h1>Faça seu login!</h1>
-        <p>Para acessar o sistema basta seguir um dos dois caminhos a seguir.</p>
+        <h1>Crie seu usuario!</h1>
+        <p>Para acessar o sistema basta criar seu usuario preenchendo os campos abaixo.</p>
         <section>
-          <input type="text" ref={emailRef} className="email" placeholder="Email" />
+          <input
+            value={email}
+            onChange={(e) =>
+              setEmail(e.target.value)}
+            type="text"
+            className="email"
+            placeholder="Email"
+          />
         </section>
         <section>
-          <input type="password" ref={passwordRef} className="password" placeholder="Senha" />
+          <input
+            value={password}
+            onChange={(e) =>
+              setPassword(e.target.value)}
+            type="password"
+            className="password"
+            placeholder="Senha"
+          />
         </section>
         <div>
-          <button type="submit" onClick={handleSignup}>Entrar</button>
+          <button disabled={loading} type="submit">Entrar</button>
         </div>
       </div>
     </Container>
