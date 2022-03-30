@@ -28,7 +28,7 @@ export const Container = styled.div`
       padding-top: 1rem;
 
       font-size: 1.8rem;
-      color: ${({ theme }) => theme.text};
+      color: ${({ theme }) => theme.textlight};
     }
 
     p {
@@ -83,8 +83,9 @@ export const Container = styled.div`
 
       > button {
         color: ${({ theme }) => theme.text};
-        height: 2rem;
-        width: 205px;
+        height: 2.5rem;
+        width: 215px;
+        text-transform: uppercase;
         background-color: ${({ theme }) => theme.backgroundButton};
         border: none;
         border-radius: 10px;
@@ -135,6 +136,7 @@ export const Container = styled.div`
   div {
     margin-top: 1rem;
     p {
+      font-size: 0.9rem;
       padding: 1rem;
 
       a {

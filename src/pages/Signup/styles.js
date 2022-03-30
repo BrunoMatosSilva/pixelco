@@ -28,13 +28,14 @@ export const Container = styled.form`
       padding-top: 1rem;
 
       font-size: 1.8rem;
-      color: ${({ theme }) => theme.text};
+      color: ${({ theme }) => theme.textlight};
     }
 
     p {
       padding: 1rem;
       color: ${({ theme }) => theme.text};
       padding-bottom: 0;
+      font-size: 0.9rem;
     }
 
     section {
@@ -84,8 +85,9 @@ export const Container = styled.form`
       > button {
         margin-top: 1rem;
         margin-bottom: 1rem;
-        height: 2rem;
-        width: 205px;
+        height: 2.5rem;
+        width: 215px;
+        text-transform: uppercase;
         color: ${({ theme }) => theme.text};
         background-color: ${({ theme }) => theme.backgroundButton};
         border: none;

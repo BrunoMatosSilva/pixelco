@@ -35,7 +35,9 @@ function Signup() {
             color: theme.text
           }
         });
-      }).finally(() => setLoading(false));
+      }).finally(() => setLoading(false),
+        setEmail(''),
+        setPassword(''));
   }
 
   return (
@@ -64,7 +66,7 @@ function Signup() {
           />
         </section>
         <div>
-          <button disabled={loading} type="submit">Entrar</button>
+          <button disabled={loading} type="submit">Criar</button>
         </div>
       </div>
     </Container>
