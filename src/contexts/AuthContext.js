@@ -5,6 +5,7 @@ import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'fire
 const AuthContext = createContext({
     currentUser: null,
     register: () => Promise,
+    login: () => Promise,
 })
 
 export const useAuth = () => useContext(AuthContext);

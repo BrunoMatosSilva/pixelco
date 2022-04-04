@@ -92,6 +92,10 @@ export const Container = styled.div`
         padding: 0.5rem 1rem 0.5rem 1rem;
         transition: all 0.2s;
 
+        &:disabled {
+      opacity: 0.2;
+    }
+
         &:hover {
           background-color: ${({ theme }) => darken(0.1, theme.backgroundButton)};
         }
