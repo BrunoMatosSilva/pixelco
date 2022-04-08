@@ -1,11 +1,12 @@
 import React from 'react';
+import Header from '../../components/Header';
 import { Container } from './styles';
 
 function Dashbaord() {
   return (
     <Container>
       <section className="header">
-        <h3>Menu-perfil</h3>
+        <Header />
       </section>
       <section className="sidenav">
         <h2>Lateral Menu</h2>
