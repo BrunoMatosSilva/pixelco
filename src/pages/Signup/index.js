@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import toast from 'react-hot-toast';
+import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
 import { theme } from '../../styles/theme';
 
 import { Container } from './styles';
 
 function Signup() {
+  const history = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
@@ -26,7 +28,10 @@ function Signup() {
     }
     setLoading(true);
     register(email, password)
-      .then((response) => console.log(response))
+      .then((response) => {
+        console.log(response)
+        history('/')
+      })
       .catch((error) => {
         console.log(error.message)
         toast.error((error.message), {

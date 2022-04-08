@@ -6,6 +6,7 @@ import { ThemeProvider } from 'styled-components';
 import App from './App';
 import AuthContextProvider from './contexts/AuthContext';
 import Dashbaord from './pages/Dashboard';
+import Profile from './pages/Profile';
 import Signup from './pages/Signup';
 import { HomeContainer } from './styles';
 import { GlobalStyles } from './styles/global';
@@ -23,6 +24,7 @@ ReactDOM.render(
               <Route path="/" element={<App />} />
               <Route path="/Dashboard" element={<Dashbaord />} />
               <Route path="/Signup" element={<Signup />} />
+              <Route path="/Profile" element={<Profile />} />
             </Routes>
           </HomeContainer>
         </ThemeProvider>
