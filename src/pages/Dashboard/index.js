@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../../components/Header';
+import SideBar from '../../components/SideBar';
 import { Container } from './styles';
 
 function Dashbaord() {
@@ -9,7 +10,7 @@ function Dashbaord() {
         <Header />
       </section>
       <section className="sidenav">
-        <h2>Lateral Menu</h2>
+        <SideBar />
       </section>
       <section className="main">
         <h3>Corpo</h3>

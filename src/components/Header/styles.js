@@ -1,3 +1,4 @@
+import { darken } from 'polished';
 import styled from 'styled-components';
 
 export const Container = styled.div`
@@ -6,6 +7,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
+  color: ${({ theme }) => theme.text};
 
     div {
         display: flex;
@@ -15,7 +17,12 @@ export const Container = styled.div`
 
         .title {
 
-            strong{
+            p {
+                padding-left: 2.5rem;
+                font-size: 2rem;
+            }
+
+            strong {
                 font-weight: bold;
             }
         }
@@ -23,17 +30,59 @@ export const Container = styled.div`
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 1rem;
+            padding-right:2.5rem;
+            gap: 1.5rem;
 
-            button {
-                background: none;
+            .business {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                background: transparent;
                 border: none;
+                border-radius: 10px;
+                color: #F19CFF;
+                padding: 0.8rem;
+                background-color: #000;
+                transition: all 0.2s ;
+                
+                &:hover{
+                    background-color: ${({ theme }) => darken(0.1, theme.backgroundButton)};
+                    color: ${({ theme }) => theme.textlight};
+                }
+
+                svg {
+                    font-size: 16px;
+                }
+                p {
+                    font-size: 0.8rem;
+                    text-transform: uppercase;
+                    padding-left: 0.3rem;
+                }
+            }
+
+            div {
+                button {
+                    background: transparent;
+                    border: none;
+
+                    svg {
+                        font-size: 28px;
+                        color: ${({ theme }) => theme.icon};
+                        transition: all 0.2s ;
+
+                        &:hover{
+                        color: ${({ theme }) => theme.textlight};
+                        }
+                    }
+                }
             }
 
             img {
                 width: 64px;
                 height: 64px;
                 border-radius: 50%;
+                border: 2px solid ${({ theme }) => theme.icon} ;
             }
         }
     }
