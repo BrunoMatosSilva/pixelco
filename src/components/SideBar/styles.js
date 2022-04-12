@@ -57,4 +57,58 @@ section {
             }
         }
     }
+
+    .cardBusiness {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: ${({ theme }) => theme.backgroundButton};
+        border-radius: 10px;
+        margin: 1rem;
+        margin-top: 6rem;
+        
+        img {
+            width: 174px;
+            height: 184px;
+            transform: translateY(-120px);
+            position: absolute;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            color: ${({ theme }) => theme.text};
+
+            h3 {
+                padding-top: 4rem;
+                padding-bottom: 1rem;
+                margin-left: 1rem ;
+            }
+
+            p {
+                font-size: 0.8rem;
+                font-weight: 400;
+                padding-left: 1rem ;
+            }
+
+            button {
+                color: ${({ theme }) => theme.text};
+                padding: 0.8rem 1rem 0.8rem 1rem;
+                margin-left: 1rem ;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                border-radius: 10px;
+                border: none;
+                background: rgb(87,146,235);
+                background: linear-gradient(10deg, rgba(87,146,235,1) 0%, rgba(242,74,225,1) 30%, rgba(253,67,39,1) 53%, rgba(252,176,69,1) 77%, rgba(87,146,235,1) 100%);
+                transition: all 0.2s ;
+
+                &:hover{
+                    background: ${({ theme }) => darken(0.1, theme.backgroundButton)};
+                    color: ${({ theme }) => theme.textlight};
+                }
+            }
+        }
+    }
 `;

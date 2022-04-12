@@ -9,7 +9,7 @@ function Header() {
         <Container>
             <div>
                 <section className="title">
-                    <p>Bem-Vindo, <strong>Bruno</strong></p>
+                    <p>Good Morning, <strong>Bruno</strong></p>
                 </section>
                 <section className="config">
                     <button className="business"><AiOutlineStar /><p>Get Business</p></button>

@@ -21,6 +21,14 @@ function SideBar() {
                     <li><a href="/dashboard"><AiOutlinePaperClip />Docs</a></li>
                 </ul>
             </section>
+            <div className="cardBusiness">
+                <img src="/img/business.png" alt="business" />
+                <section>
+                    <h3>Updgrade to Meetings</h3>
+                    <p>Get unlimet fuctions upgrading to Business now</p>
+                    <button>Upgrade</button>
+                </section>
+            </div>
         </Container>
     );
 }
