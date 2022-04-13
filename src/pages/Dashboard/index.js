@@ -13,7 +13,17 @@ function Dashbaord() {
         <SideBar />
       </section>
       <section className="main">
-        <h3>Corpo</h3>
+        <div>
+          <section className="sales">
+            <h2>Sales</h2>
+          </section>
+          <section className="visitors">
+            <h2>Visitors</h2>
+          </section>
+          <section className="statics">
+            <h2>Statics</h2>
+          </section>
+        </div>
       </section>
     </Container>
   );

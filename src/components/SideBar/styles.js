@@ -52,7 +52,14 @@ section {
                     &:hover{
                     background-color: ${({ theme }) => theme.backgroundButton};
                     color: ${({ theme }) => theme.textlight};
-                }
+                    }
+
+                    span {
+                        font-size: 0.8rem;
+                        background-color: ${({ theme }) => theme.backgroundButton};
+                        padding:0.3rem 0.5rem 0.3rem 0.5rem;
+                        border-radius: 50%;
+                    }
                 }
             }
         }

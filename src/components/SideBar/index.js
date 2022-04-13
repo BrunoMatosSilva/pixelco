@@ -17,7 +17,7 @@ function SideBar() {
                     <li><a href="/dashboard"><RiDashboardFill />Dashbaord</a></li>
                     <li><a href="/dashboard"><BsCart />Orders</a></li>
                     <li><a href="/dashboard"><FaRegUser />My partner</a></li>
-                    <li><a href="/dashboard"><FiMessageCircle />Messages</a></li>
+                    <li><a href="/dashboard"><FiMessageCircle />Messages <span>3</span></a></li>
                     <li><a href="/dashboard"><AiOutlinePaperClip />Docs</a></li>
                 </ul>
             </section>
