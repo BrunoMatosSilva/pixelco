@@ -60,6 +60,7 @@ class Graphics extends Component {
                                 series={this.state.series}
                                 type="area"
                                 height={350}
+                                width={950}
                             />
                         </div>
                     </div>
