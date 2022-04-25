@@ -1,4 +1,6 @@
 import React from 'react';
+import CardSales from '../../components/CardSales';
+import Graphics from '../../components/Graphics';
 import Header from '../../components/Header';
 import SideBar from '../../components/SideBar';
 import { Container } from './styles';
@@ -15,13 +17,30 @@ function Dashbaord() {
       <section className="main">
         <div>
           <section className="sales">
-            <h2>Sales</h2>
+            <div>
+              <section>
+                <h2>Sales</h2> <span className="buttonDash"> . . </span>
+              </section>
+              <p className="subtitle">This Mont</p>
+              <CardSales />
+            </div>
           </section>
           <section className="visitors">
-            <h2>Visitors</h2>
+            <div>
+              <section>
+                <h2>Visitors</h2> <span className="buttonDash"> . . </span>
+              </section>
+              <p className="subtitle">This Mont</p>
+            </div>
+            <Graphics />
           </section>
           <section className="statics">
-            <h2>Statics</h2>
+            <div>
+              <section>
+                <h2>Statics</h2> <span className="buttonDash"> . . </span>
+              </section>
+              <p className="subtitle">This Mont</p>
+            </div>
           </section>
         </div>
       </section>
