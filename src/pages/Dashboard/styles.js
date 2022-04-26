@@ -92,7 +92,7 @@ export const Container = styled.div`
               border: 1px solid ${({ theme }) => theme.backgroundButton};
               height: 15px;
               margin-top:0.5rem;
-              margin-right: 1rem;
+              margin-right: 3rem;
               padding-bottom: 0.7rem;
               padding-right: 0.5rem;
               padding-left: 0.5rem;
@@ -132,7 +132,7 @@ export const Container = styled.div`
               border: 1px solid ${({ theme }) => theme.backgroundButton};
               height: 15px;
               margin-top:0.5rem;
-              margin-right: 1rem;
+              margin-right: 3rem;
               padding-bottom: 0.7rem;
               padding-right: 0.5rem;
               padding-left: 0.5rem;

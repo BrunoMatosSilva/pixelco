@@ -7,6 +7,7 @@ export const Container = styled.div`
     flex-direction: column;
     width: 100%;
     margin-left: 1.5rem;
+    margin-top: 2rem;
 
     div {
         width: 300px;
@@ -45,7 +46,7 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    margin-top: 1rem ;
+    margin-top: 5rem ;
 
     .box{
         display: flex;

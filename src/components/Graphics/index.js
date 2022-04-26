@@ -9,7 +9,7 @@ class Graphics extends Component {
         this.state = {
             series: [{
                 name: 'This mont',
-                color: '#FFAAAA',
+                color: '#E03A45',
                 data: [31, 40, 28, 51, 42, 109, 100]
             }, {
                 name: 'Last mont',
@@ -23,11 +23,11 @@ class Graphics extends Component {
                     toolbar: false
                 },
                 dataLabels: {
-                    enabled: false
+                    enabled: false,
                 },
                 legend: {
-                    horizontalAlign: 'right',
-                    position: 'top'
+                    enabled: false,
+                    position: 'right'
                 },
                 stroke: {
                     curve: 'smooth'
@@ -52,9 +52,13 @@ class Graphics extends Component {
     render() {
         return (
             <Container>
+                <section>
+                    <h5>227,067</h5>
+                </section>
                 <div className="app">
                     <div className="row">
                         <div className="mixed-chart">
+
                             <Chart
                                 options={this.state.options}
                                 series={this.state.series}

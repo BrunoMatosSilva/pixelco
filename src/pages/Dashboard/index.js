@@ -3,6 +3,7 @@ import CardSales from '../../components/CardSales';
 import Graphics from '../../components/Graphics';
 import Header from '../../components/Header';
 import SideBar from '../../components/SideBar';
+import Statics from '../../components/Statics';
 import { Container } from './styles';
 
 function Dashbaord() {
@@ -41,6 +42,7 @@ function Dashbaord() {
               </section>
               <p className="subtitle">This Mont</p>
             </div>
+            <Statics />
           </section>
         </div>
       </section>

@@ -6,4 +6,5 @@ export const theme = {
     icon: '#495275',
     text: '#ffffff',
     textlight: '#18CDCA',
+    textSubtitle: '#B5BCCD'
 };
