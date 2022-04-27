@@ -8,11 +8,16 @@ justify-content: center;
 margin-top: 1rem;
 gap: 5rem;
 
+        @media(max-width: 900px) {
+              flex-direction: column !important;
+        }
+
 section {
     border-radius: 22px;
     background: rgb(30,51,89);
     background: linear-gradient(180deg, rgba(30,51,89,1) 0%, rgba(119,74,75,1) 100%);
     padding: 1rem;
+    margin-bottom: 2rem;
 
     div {
         .iconChart {

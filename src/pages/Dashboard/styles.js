@@ -2,12 +2,18 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: grid;
-  grid-template-columns: 280px 1fr;
-  grid-template-rows: 120px 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   grid-template-areas:
     "sidenav header"
     "sidenav main";
   height: 100vh;
+
+  @media(max-width: 900px) {
+    grid-template-areas:
+      "header"
+      "main";
+  }
 
   .header {
     grid-area: header;
@@ -15,18 +21,29 @@ export const Container = styled.div`
 
   .sidenav {
   grid-area: sidenav;
+  max-width: 300px;
   background-color: ${({ theme }) => theme.backgroundSideMenu};
+  
+  @media(max-width: 900px) {
+    display: none;
+    }
   }
 
   .main {
+
   grid-area: main;
     div {
       color: ${({ theme }) => theme.text};
       display: grid;
-      grid-template-columns: 350px 1fr;
+      grid-template-columns: 1fr;
       grid-template-areas:
       "sales visitors"
       "sales statics";
+
+      @media(max-width: 900px) {
+        display: flex;
+        flex-direction: column;
+            }
 
       .sales {
         grid-area: sales;
@@ -52,7 +69,7 @@ export const Container = styled.div`
               border: 1px solid ${({ theme }) => theme.backgroundButton};
               height: 15px;
               margin-top:0.5rem;
-              margin-right: 1rem;
+              margin-right: 3rem;
               padding-bottom: 0.7rem;
               padding-right: 0.5rem;
               padding-left: 0.5rem;
@@ -70,12 +87,17 @@ export const Container = styled.div`
       }
 
       .visitors {
+        @media(max-width: 900px) {
+          display: none;
+        }
+
       grid-area: visitors;
       div {
         display: flex;
         flex-direction: column;
 
           section {
+            width: 100%;
             display: flex;
             flex-direction: row;
             justify-content: space-between;

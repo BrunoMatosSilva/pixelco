@@ -14,11 +14,11 @@ function SideBar() {
             </div>
             <section>
                 <ul>
-                    <li><a href="/dashboard"><RiDashboardFill />Dashbaord</a></li>
-                    <li><a href="/dashboard"><BsCart />Orders</a></li>
-                    <li><a href="/dashboard"><FaRegUser />My partner</a></li>
-                    <li><a href="/dashboard"><FiMessageCircle />Messages <span>3</span></a></li>
-                    <li><a href="/dashboard"><AiOutlinePaperClip />Docs</a></li>
+                    <li><a href="/dashboard"><RiDashboardFill /><p>Dashbaord</p></a></li>
+                    <li><a href="/dashboard"><BsCart /><p>Orders</p></a></li>
+                    <li><a href="/dashboard"><FaRegUser /><p>My partner</p></a></li>
+                    <li><a href="/dashboard"><FiMessageCircle /><p>Messages</p><span>3</span></a></li>
+                    <li><a href="/dashboard"><AiOutlinePaperClip /><p>Docs</p></a></li>
                 </ul>
             </section>
             <div className="cardBusiness">

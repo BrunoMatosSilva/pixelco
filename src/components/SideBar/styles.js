@@ -97,6 +97,7 @@ section {
                 font-size: 0.8rem;
                 font-weight: 400;
                 padding-left: 1rem ;
+                padding-right: 1rem ;
             }
 
             button {

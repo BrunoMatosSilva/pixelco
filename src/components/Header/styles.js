@@ -15,10 +15,31 @@ export const Container = styled.div`
         justify-content: space-between;
         align-items: center;
 
+        @media (max-width: 900px){
+            justify-content: center;
+        }
+
+        .logoMobile {
+            display: none;
+            @media(max-width: 900px) {
+                display: initial;
+            }
+        }
+
+        .menuMobile {
+            display: none;
+            @media(max-width: 900px) {
+                display: initial;
+            }
+        }
+
         .title {
 
+            @media(max-width: 900px) {
+                display: none;
+            }
+
             p {
-                padding-left: 2.5rem;
                 font-size: 2rem;
             }
 
