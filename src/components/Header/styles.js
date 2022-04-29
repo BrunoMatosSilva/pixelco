@@ -23,6 +23,10 @@ export const Container = styled.div`
             display: none;
             @media(max-width: 900px) {
                 display: initial;
+                 img {
+                     width: 35px;
+                     height: 30px;
+                 }
             }
         }
 
@@ -66,6 +70,10 @@ export const Container = styled.div`
                 padding: 0.8rem;
                 background-color: #000;
                 transition: all 0.2s ;
+
+                @media(max-width: 900px) {
+                    display: none;
+                }
                 
                 &:hover{
                     background-color: ${({ theme }) => darken(0.1, theme.backgroundButton)};
@@ -74,11 +82,16 @@ export const Container = styled.div`
 
                 svg {
                     font-size: 16px;
+
                 }
                 p {
                     font-size: 0.8rem;
                     text-transform: uppercase;
                     padding-left: 0.3rem;
+                    
+                    @media(max-width: 900px) {
+                    font-size: 0.6rem;
+                    }
                 }
             }
 
@@ -92,6 +105,10 @@ export const Container = styled.div`
                         color: ${({ theme }) => theme.icon};
                         transition: all 0.2s ;
 
+                        @media(max-width: 900px) {
+                        font-size: 24px;
+                }
+
                         &:hover{
                         color: ${({ theme }) => theme.textlight};
                         }
@@ -104,6 +121,12 @@ export const Container = styled.div`
                 height: 64px;
                 border-radius: 50%;
                 border: 2px solid ${({ theme }) => theme.icon} ;
+
+                @media(max-width: 900px) {
+                    width: 40px;
+                    height: 40px;
+                }
+
             }
         }
     }

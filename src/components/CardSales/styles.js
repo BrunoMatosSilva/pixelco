@@ -9,6 +9,10 @@ export const Container = styled.div`
     margin-left: 1.5rem;
     margin-top: 2rem;
 
+     @media(max-width: 900px) {
+        margin-left: 0;
+    }
+
     div {
         width: 300px;
         display: flex;
@@ -48,6 +52,10 @@ export const Container = styled.div`
     flex-direction: row;
     margin-top: 5rem ;
 
+    @media(max-width: 900px) {
+                margin-top: 2rem;
+              }
+
     .box{
         display: flex;
         flex-direction: row;
@@ -57,6 +65,12 @@ export const Container = styled.div`
         background: rgb(87,146,235);
         background: linear-gradient(10deg, rgba(87,146,235,1) 0%, rgba(242,74,225,1) 30%, rgba(253,67,39,1) 53%, rgba(252,176,69,1) 77%, rgba(87,146,235,1) 100%);
         border-radius: 20px;
+
+        @media(max-width: 900px) {
+                width:290px;
+                margin-left: 1rem;
+                margin-bottom: 2rem;
+              }
 
         span {
             display: flex;

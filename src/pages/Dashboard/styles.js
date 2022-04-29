@@ -10,6 +10,7 @@ export const Container = styled.div`
   height: 100vh;
 
   @media(max-width: 900px) {
+    display: inline;
     grid-template-areas:
       "header"
       "main";
@@ -60,6 +61,10 @@ export const Container = styled.div`
             h2 {
               margin-left: 2.8rem;
               font-size: 1.5rem;
+
+              @media(max-width: 900px) {
+                margin-left: 1rem;
+              }
             }
 
             .buttonDash {
@@ -74,6 +79,10 @@ export const Container = styled.div`
               padding-right: 0.5rem;
               padding-left: 0.5rem;
               border-radius: 10px;
+
+              @media(max-width: 900px) {
+                margin-right: 1rem;
+              }
             }
           }
 
@@ -82,6 +91,10 @@ export const Container = styled.div`
             margin-top: 0.5rem;
             font-size: 0.8rem;
             color: ${({ theme }) => theme.icon};
+
+            @media(max-width: 900px) {
+                margin-left: 1rem;
+              }
           }
         }
       }
@@ -145,6 +158,9 @@ export const Container = styled.div`
             h2 {
               margin-left: 2.8rem;
               font-size: 1.5rem;
+              @media(max-width: 900px) {
+                margin-left: 1rem;
+              }
             }
 
             .buttonDash {
@@ -159,6 +175,10 @@ export const Container = styled.div`
               padding-right: 0.5rem;
               padding-left: 0.5rem;
               border-radius: 10px;
+
+              @media(max-width: 900px) {
+                margin-right: 1rem;
+              }
             }
           }
 

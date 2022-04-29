@@ -16,7 +16,7 @@ function Header() {
                     <img src="/img/logo.png" alt="Logo" />
                 </div>
                 <section className="title">
-                    <p>Good Morning, <strong>Bruno</strong></p>
+                    <p>Good Night, <strong>Bruno</strong></p>
                 </section>
                 <section className="config">
                     <button className="business"><AiOutlineStar /><p>Get Business</p></button>
