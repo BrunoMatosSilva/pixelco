@@ -3,6 +3,7 @@ import toast from 'react-hot-toast';
 import { FcGoogle } from 'react-icons/fc';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
+import { useMounted } from '../../hooks/useMounted';
 import { theme } from '../../styles/theme';
 
 import { Container } from './styles';
@@ -12,7 +13,10 @@ function FormLogin() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
-  const { login } = useAuth();
+
+  const { login, signInWithGoogle } = useAuth();
+
+  const mounted = useMounted();
 
   async function handleLogin(event) {
     event.preventDefault();
@@ -41,7 +45,15 @@ function FormLogin() {
             color: theme.text
           }
         });
-      }).finally(() => setLoading(false));
+      }).finally(() => mounted.current && setLoading(false));
+  }
+
+  async function loginWithGoogle(email, password) {
+    const result = await signInWithGoogle();
+
+    if (result.user) {
+      history('/Dashboard')
+    }
   }
 
   return (
@@ -72,9 +84,10 @@ function FormLogin() {
         <div>
           <button disabled={loading} type="submit" onClick={handleLogin}>Entrar</button>
         </div>
+        <p><a href="/">Esqueceu a senha?</a></p>
         <hr />
         <section>
-          <button>
+          <button onClick={loginWithGoogle}>
             <FcGoogle /> Entrar com Google
           </button>
         </section>

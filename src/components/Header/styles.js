@@ -15,25 +15,26 @@ export const Container = styled.div`
         justify-content: space-between;
         align-items: center;
 
-        @media (max-width: 900px){
-            justify-content: center;
-        }
-
         .logoMobile {
             display: none;
             @media(max-width: 900px) {
                 display: initial;
                  img {
-                     width: 35px;
+                     width: 30px;
                      height: 30px;
+                     margin-top: 0.5rem;
+                     margin-left: 1rem;
                  }
             }
         }
 
         .menuMobile {
             display: none;
+            font-size: 1.5rem;
             @media(max-width: 900px) {
                 display: initial;
+                margin-top: 0.5rem;
+                margin-right: 1rem;
             }
         }
 
@@ -57,6 +58,13 @@ export const Container = styled.div`
             justify-content: center;
             padding-right:2.5rem;
             gap: 1.5rem;
+
+            @media(max-width: 900px) {
+                margin-top: 0.5rem;
+                padding-right: 0rem;
+            }
+
+            
 
             .business {
                 display: flex;
@@ -123,8 +131,8 @@ export const Container = styled.div`
                 border: 2px solid ${({ theme }) => theme.icon} ;
 
                 @media(max-width: 900px) {
-                    width: 40px;
-                    height: 40px;
+                    width: 30px;
+                    height: 30px;
                 }
 
             }

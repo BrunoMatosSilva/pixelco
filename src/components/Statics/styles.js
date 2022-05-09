@@ -9,7 +9,9 @@ margin-top: 1rem;
 gap: 5rem;
 
         @media(max-width: 900px) {
+            margin-top: 2rem;
               flex-direction: column !important;
+              gap: 0.5rem;
         }
 
 section {

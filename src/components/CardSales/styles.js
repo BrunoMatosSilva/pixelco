@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+display: flex;
+align-items: center;
+justify-content: center;
 
 .cardSale {
     display: flex;
@@ -11,6 +14,9 @@ export const Container = styled.div`
 
      @media(max-width: 900px) {
         margin-left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center !important;
     }
 
     div {
@@ -60,7 +66,6 @@ export const Container = styled.div`
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-left: 2.5rem;
         width:300px;
         background: rgb(87,146,235);
         background: linear-gradient(10deg, rgba(87,146,235,1) 0%, rgba(242,74,225,1) 30%, rgba(253,67,39,1) 53%, rgba(252,176,69,1) 77%, rgba(87,146,235,1) 100%);
@@ -68,7 +73,7 @@ export const Container = styled.div`
 
         @media(max-width: 900px) {
                 width:290px;
-                margin-left: 1rem;
+                margin-left: 0rem;
                 margin-bottom: 2rem;
               }
 

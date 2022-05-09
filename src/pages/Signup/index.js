@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
+import { useMounted } from '../../hooks/useMounted';
 import { theme } from '../../styles/theme';
 
 import { Container } from './styles';
@@ -12,6 +13,8 @@ function Signup() {
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const { register } = useAuth();
+
+  const mounted = useMounted()
 
   async function handleSignup(event) {
     event.preventDefault();
@@ -40,7 +43,7 @@ function Signup() {
             color: theme.text
           }
         });
-      }).finally(() => setLoading(false),
+      }).finally(() => mounted.current && setLoading(false),
         setEmail(''),
         setPassword(''));
   }

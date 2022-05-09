@@ -15,10 +15,11 @@ import { theme } from './styles/theme';
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <AuthContextProvider>
-        <ThemeProvider theme={theme}>
-          <GlobalStyles />
-          <Toaster position="bottom-right" />
+
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
+        <Toaster position="bottom-right" />
+        <AuthContextProvider>
           <HomeContainer>
             <Routes>
               <Route path="/" element={<App />} />
@@ -27,8 +28,8 @@ ReactDOM.render(
               <Route path="/Profile" element={<Profile />} />
             </Routes>
           </HomeContainer>
-        </ThemeProvider>
-      </AuthContextProvider>
+        </AuthContextProvider>
+      </ThemeProvider>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')

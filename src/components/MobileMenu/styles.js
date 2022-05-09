@@ -36,22 +36,29 @@ export const Container = styled.section`
     gap: 2rem;
     transform: scale(0.7);
     transition: 0.7s;
-  }
-  span {
-    border: 1px solid white;
-    width: 80px;
-    border-radius: 30px;
-    transition: 0.2s;
-    &:hover {
-      border-color: ${({ theme }) => theme.textlight};
-    }
+
     a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
       margin-left: 1rem;
+      color: ${({ theme }) => theme.text};
+      transition: all 0.2s ;
+
+      &:hover {
+        color: ${({ theme }) => theme.textlight};
+      }
+
+      svg {
+        margin-right: 1rem;
+      }
     }
   }
+
   ${({ isVisible }) =>
-        isVisible &&
-        css`
+    isVisible &&
+    css`
       opacity: 1;
       pointer-events: auto;
       transform: translateY(0px);

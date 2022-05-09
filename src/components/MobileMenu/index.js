@@ -16,11 +16,11 @@ function MobileMenu({ menuIsVisible, setMenuIsVisible }) {
         <Container isVisible={menuIsVisible}>
             <IoClose size={45} onClick={() => setMenuIsVisible(false)} />
             <ul>
-                <a href="/dashboard"><RiDashboardFill /></a>
-                <a href="/dashboard"><BsCart /></a>
-                <a href="/dashboard"><FaRegUser /></a>
-                <a href="/dashboard"><FiMessageCircle /></a>
-                <a href="/dashboard"><AiOutlinePaperClip /></a>
+                <a href="/dashboard"><RiDashboardFill /> Dashboard</a>
+                <a href="/dashboard"><BsCart />Orders</a>
+                <a href="/dashboard"><FaRegUser />My partner</a>
+                <a href="/dashboard"><FiMessageCircle />Messages</a>
+                <a href="/dashboard"><AiOutlinePaperClip />Docs</a>
             </ul>
         </Container>
     );

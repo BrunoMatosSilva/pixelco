@@ -58,6 +58,10 @@ export const Container = styled.div`
             flex-direction: row;
             justify-content: space-between;
 
+            @media(max-width: 900px){
+              margin-top: 1rem;
+            }
+
             h2 {
               margin-left: 2.8rem;
               font-size: 1.5rem;
