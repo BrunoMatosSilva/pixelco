@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import toast from 'react-hot-toast';
-import { useNavigate } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
 import { useMounted } from '../../hooks/useMounted';
 import { theme } from '../../styles/theme';
@@ -8,7 +8,7 @@ import { theme } from '../../styles/theme';
 import { Container } from './styles';
 
 function Signup() {
-  const history = useNavigate();
+  const history = useHistory();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
@@ -33,7 +33,7 @@ function Signup() {
     register(email, password)
       .then((response) => {
         console.log(response)
-        history('/')
+        history.replace('/')
       })
       .catch((error) => {
         console.log(error.message)

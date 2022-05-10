@@ -10,7 +10,7 @@ function SideBar() {
     return (
         <Container>
             <div>
-                <img src="/img/logo.png" alt="Logo" /><h2>Pixel Co.</h2>
+                <a href="/Dashboard"><img src="/img/logo.png" alt="Logo" /></a><h2>Pixel Co.</h2>
             </div>
             <section>
                 <ul>

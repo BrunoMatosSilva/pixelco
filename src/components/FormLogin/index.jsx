@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import toast from 'react-hot-toast';
 import { FcGoogle } from 'react-icons/fc';
-import { useNavigate } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
 import { useMounted } from '../../hooks/useMounted';
 import { theme } from '../../styles/theme';
@@ -9,7 +9,7 @@ import { theme } from '../../styles/theme';
 import { Container } from './styles';
 
 function FormLogin() {
-  const history = useNavigate();
+  const history = useHistory();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
@@ -35,7 +35,7 @@ function FormLogin() {
     login(email, password)
       .then((response) => {
         console.log(response)
-        history('/Dashboard')
+        history.replace('/Dashboard')
       })
       .catch((error) => {
         console.log(error.message)
@@ -52,7 +52,7 @@ function FormLogin() {
     const result = await signInWithGoogle();
 
     if (result.user) {
-      history('/Dashboard')
+      history.replace('/Dashboard')
     }
   }
 
@@ -84,7 +84,7 @@ function FormLogin() {
         <div>
           <button disabled={loading} type="submit" onClick={handleLogin}>Entrar</button>
         </div>
-        <p><a href="/">Esqueceu a senha?</a></p>
+        <p><a href="/ForgotPassword">Esqueceu a senha?</a></p>
         <hr />
         <section>
           <button onClick={loginWithGoogle}>

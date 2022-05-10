@@ -6,10 +6,10 @@ import { RiMenu3Fill } from 'react-icons/ri';
 import { Container } from './styles';
 import MobileMenu from '../MobileMenu';
 import { useAuth } from '../../contexts/AuthContext';
-import { useNavigate } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 function Header() {
-    const history = useNavigate();
+    const history = useHistory();
     const [menuIsOpen, setMenuIsOpen] = useState(false);
     const { logout, currentUser } = useAuth();
 
@@ -17,7 +17,7 @@ function Header() {
         event.preventDefault();
 
         logout();
-        history('/');
+        history.replace('/');
     }
 
     return (
@@ -25,7 +25,7 @@ function Header() {
             <MobileMenu menuIsVisible={menuIsOpen} setMenuIsVisible={setMenuIsOpen} />
             <div>
                 <div className="logoMobile">
-                    <img src="/img/logo.png" alt="Logo" />
+                    <a href="/"><img src="/img/logo.png" alt="Logo" /></a>
                 </div>
                 <section className="title">
                     <p>Good Night, <strong>{currentUser.displayName || currentUser.email}</strong></p>
