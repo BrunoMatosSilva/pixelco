@@ -34,7 +34,7 @@ function Header() {
                     <button className="business"><AiOutlineStar /><p>Get Business</p></button>
                     <div><button><IoMdNotificationsOutline /></button></div>
                     <div><button onClick={handleLogout}><ImExit /></button></div>
-                    <div><a href="/profile"><img src={currentUser.photoURL || "/img/user.jpg"} alt="avatar" /></a></div>
+                    <div><img src={currentUser.photoURL || "/img/user.jpg"} alt="avatar" /></div>
                 </section>
                 <section className="menuMobile">
                     <RiMenu3Fill onClick={() => setMenuIsOpen(true)} className="mobile" />

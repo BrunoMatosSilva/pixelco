@@ -32,7 +32,12 @@ function Signup() {
     setLoading(true);
     register(email, password)
       .then((response) => {
-        console.log(response)
+        toast(("Usuario criado com sucesso!"), {
+          style: {
+            background: theme.backgroundButton,
+            color: theme.text
+          }
+        })
         history.replace('/')
       })
       .catch((error) => {
