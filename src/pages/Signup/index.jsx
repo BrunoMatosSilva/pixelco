@@ -81,6 +81,8 @@ function Signup() {
         <div>
           <button disabled={loading} type="submit">Criar</button>
         </div>
+
+        <a href="/">Fazer Login!</a>
       </div>
     </Container>
   );

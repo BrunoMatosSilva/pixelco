@@ -20,6 +20,20 @@ export const Container = styled.form`
     border-top: 1px solid ${({ theme }) => theme.textlight};
     border-bottom: 1px solid ${({ theme }) => theme.textlight};
 
+    a {
+        padding-left: 0.2rem;
+        color: ${({ theme }) => theme.textlight};
+        transition: all 0.2s;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        border: 1px solid ${({ theme }) => theme.backgroundButton};
+        border-radius: 10px;
+
+        &:hover {
+          color: ${({ theme }) => darken(0.2, theme.textlight)};
+        }
+      }
+
     h1 {
       display: flex;
       align-items: center;
