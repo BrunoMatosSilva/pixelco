@@ -1,8 +1,14 @@
 import React from 'react';
-import FormLogin from './components/FormLogin';
+import AppRouter from './components/AppRouter';
+import AuthContextProvider from './contexts/AuthContext';
 
 function App() {
-  return <FormLogin />;
+  return (
+    <AuthContextProvider>
+      <AppRouter />
+    </AuthContextProvider>
+
+  );
 }
 
 export default App;
