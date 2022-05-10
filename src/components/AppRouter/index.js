@@ -2,7 +2,6 @@ import React from 'react'
 import FormLogin from '../FormLogin'
 import Signup from '../../pages/Signup'
 import Dashboard from '../../pages/Dashboard'
-import Profile from '../../pages/Profile'
 import {
     BrowserRouter as Router,
     Route,
@@ -22,7 +21,6 @@ export default function AppRouter(props) {
                     <ProtectedRoute exact path='/Dashboard' component={Dashboard} />
                     <Route exact path='/Signup' component={Signup} />
                     <Route exact path='/ForgotPassword' component={ForgotPassword} />
-                    <ProtectedRoute exact path='/Profile' component={Profile} />
                 </Switch>
             </Router>
         </>
