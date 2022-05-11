@@ -60,7 +60,7 @@ function FormLogin() {
     <Container>
       <div>
         <h1>Faça seu login!</h1>
-        <p>Para acessar o sistema basta seguir um dos dois caminhos a seguir.</p>
+        <span>Para acessar o sistema basta seguir um dos dois caminhos a seguir.</span>
         <section>
           <input
             value={email}

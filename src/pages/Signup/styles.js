@@ -20,6 +20,13 @@ export const Container = styled.form`
     border-top: 1px solid ${({ theme }) => theme.textlight};
     border-bottom: 1px solid ${({ theme }) => theme.textlight};
 
+    span {
+      color: ${({ theme }) => theme.text};
+      font-size: 0.9rem;
+      padding-left: 1rem;
+      padding-top: 1rem;
+    }
+
     a {
         padding-left: 0.2rem;
         color: ${({ theme }) => theme.textlight};

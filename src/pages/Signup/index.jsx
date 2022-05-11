@@ -57,7 +57,7 @@ function Signup() {
     <Container onSubmit={handleSignup}>
       <div>
         <h1>Crie seu usuario!</h1>
-        <p>Para acessar o sistema basta criar seu usuario preenchendo os campos abaixo.</p>
+        <span>Para acessar o sistema basta criar seu usuario preenchendo os campos abaixo.</span>
         <section>
           <input
             value={email}

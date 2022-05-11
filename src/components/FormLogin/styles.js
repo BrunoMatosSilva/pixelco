@@ -31,6 +31,13 @@ export const Container = styled.div`
       color: ${({ theme }) => theme.textlight};
     }
 
+    span {
+      color: ${({ theme }) => theme.text};
+      font-size: 1rem;
+      padding-left: 1rem;
+      padding-top: 1rem;
+    }
+
     p {
       padding: 1rem;
       color: ${({ theme }) => theme.text};

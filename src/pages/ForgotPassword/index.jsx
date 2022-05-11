@@ -36,7 +36,7 @@ function ForgotPassword() {
         <Container onSubmit={handleForgotPassword}>
             <div>
                 <h1>Esqueceu sua senha?</h1>
-                <p>Para recuperar por favor preencher com o e-mail que usou como usuario para o login.</p>
+                <span>Para recuperar por favor preencher com o e-mail que usou como usuario para o login.</span>
                 <section>
                     <input
                         value={email}
