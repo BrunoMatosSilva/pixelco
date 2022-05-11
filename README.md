@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+<h1 align="center">
+<img src="https://user-images.githubusercontent.com/69808542/167858420-65db1bbd-5d7b-48de-8b63-773901baec15.png" />
+</h1>
+<p align="center">Esse App Web eu desenvolvi com o intuito de praticar as funcionalidades de login, tanto por usuario e senha como social usando o google. Utilizei a API do firebase para ser o backend de toda a aplicação. Nela possui um esqueceu senha que funciona para a opção de login e senha criado a onde o firebase manda um e-mail com um link para cadastra a nova senha (Esse e-mail pode cair no lixo eletronico inicialmente). O Dashboard e apenas ilustrativos todos os dados estão estaticos e as outras paginas não foram desenvolvidas, porque o foco em si foi o login. </p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center"><img src="https://img.shields.io/github/issues/BrunoMatosSilva/pixelco" />
+<img src="https://img.shields.io/github/forks/BrunoMatosSilva/pixelco" />
+<img src="https://img.shields.io/github/stars/BrunoMatosSilva/pixelco" /></div>
 
-## Available Scripts
+## Home Page
 
-In the project directory, you can run:
+<h1 align="center">
+<img src="https://user-images.githubusercontent.com/69808542/167856897-ca212d05-7448-4d37-9a7d-997467fa2d2c.png" />
+</h1>
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<h1 align="center">Tecnologias Usadas</h1>
+<ul>
+<li>ReactJS.</li>
+<li>Firebase.</li>
+<li>React Hot Toast.</li>
+<li>Styled Components.</li>
+<li>ApexCharts.</li>
+<li>Polished.</li>
+</ul>
 
-### `yarn test`
+<h1 align="center">O que temos no Projeto</h1>
+<ul>
+<li> Design Responsivo Completo.</li>
+<li> Login Social gerenciado pelo Firebase.</li>
+<li> Styled Components usado para todo o Css do site.</li>
+<li> Login e Senha gerenciado pelo Firebase.</li>
+<li> Cadastro de login gerenciado pelo Firebase.</li>
+<li> Esqueceu a Senha enviado por e-mail pelo Firebase.</li>
+<li> Rotas persisitidas e protegidas para acesso apenas quando logado.</li>
+<li> React Hot Toasty para a validação dos formulários.</li>
+</ul>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<h1 align="center">Pré-Requisito</h1>
 
-### `yarn build`
+<p>Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+Git, Node.js.</p>
+<p>Além disto é bom ter um editor para trabalhar com o código como VSCode</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<h1 align="center">Instalação</h1>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+# Abra um terminal e copie esse repositorio e cole esse comando:
+git clone https://github.com/BrunoMatosSilva/pixelco.git 
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+# Acesse a pasta da aplicação
+$ cd pixelco
 
-### `yarn eject`
+# Instale as dependências
+$ yarn
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Inicie a aplicação
+$ yarn start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<h1 align="center">Link do Projeto Online</h1>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Pixelco](https://pixelco.vercel.app/)
