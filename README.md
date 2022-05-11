@@ -7,13 +7,17 @@
 <img src="https://img.shields.io/github/forks/BrunoMatosSilva/pixelco" />
 <img src="https://img.shields.io/github/stars/BrunoMatosSilva/pixelco" /></div>
 
-## Home Page
+## Login Page
 
 <h1 align="center">
-<img src="https://user-images.githubusercontent.com/69808542/167856897-ca212d05-7448-4d37-9a7d-997467fa2d2c.png" />
+<img src="https://user-images.githubusercontent.com/69808542/167860473-2057c961-ea50-4049-bb57-cc232f5e52dd.png" />
 </h1>
 
+## Dashboard Page
 
+<h1 align="center">
+<img src="https://user-images.githubusercontent.com/69808542/167860708-44843927-ca10-4e9b-a9f0-a179e58e8bd8.png" />
+</h1>
 
 <h1 align="center">Tecnologias Usadas</h1>
 <ul>
